@@ -1,0 +1,1 @@
+window.POLL_CFG={"api": "https://script.google.com/macros/s/AKfycbwgmYbnUfkb3cyo1DK6TNmcA1mFR8v6-mHKcIE44EfWciCfAwweZDqLYSLXe-a5rY_y/exec"};
