@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-emoji-75c362940e', SHELL = ["/emoji/assets/site.css?v=9cff45ef36", "/emoji/assets/site.js?v=38b96724e9", "/emoji/icons/logo-light.webp", "/emoji/icons/logo-dark.webp"];
+const CACHE = 'syg-m-emoji-82edbd176f', SHELL = ["/emoji/assets/site.css?v=36eb89c45d", "/emoji/assets/site.js?v=9977d20129", "/emoji/icons/logo-light.webp", "/emoji/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-emoji-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
